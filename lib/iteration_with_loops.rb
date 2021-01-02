@@ -5,7 +5,7 @@ def join_nested_strings(src)
   row_index = 0
   while row_index < src.length do
     column_index = 0
-    while column_index < src[row_index] do
+    while column_index < src[row_index].length do
       if src[row_index][column_index].instance_of? String
         combined_string += src[row_index][column_index]
         combined_string += " "
