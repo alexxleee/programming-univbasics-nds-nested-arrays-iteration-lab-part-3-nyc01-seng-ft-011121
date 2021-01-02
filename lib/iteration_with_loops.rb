@@ -8,9 +8,13 @@ def join_nested_strings(src)
     while column_index < src[row_index] do
       if src[row_index][column_index].instance_of? String
         combined_string += src[row_index][column_index]
+        combined_string += " "
       end
-    
-  
+      column_index += 1
+    end
+    row_index += 1
+  end
+  combined_string
 end
 
 #[9, 2, 1]
